@@ -1,0 +1,55 @@
+
+
+/*font-family: 'Raleway', sans-serif;
+font-family: 'Poiret One', cursive;*/
+
+/*************General**************/
+
+
+
+
+body {
+	/*background: url(http://pluspng.com/img-png/avengers-png-photos-1600.png);
+	background-position: right;
+	background-repeat: no-repeat;*/
+	height: 100vh;
+	width: 100vw;
+}
+
+.container {
+	font-family: raleway, 'sans-serif';
+	background-color: rgba(255, 255, 255, 0.5);
+	width: 50%;
+	margin: 0 auto;
+	border: 1px solid black;
+	border-radius: 1%;
+
+}
+
+/*************Text**************/
+
+h1 {
+	text-align: center;
+	font-family: 'Poiret One', 'cursive', 'sans-serif';
+}
+
+#description {
+	font-size: 20px;
+	text-align: center;
+	padding: 10px;
+}
+
+
+
+
+
+
+/*************Forms**************/
+
+.content {
+	display: inline-block;
+	
+}
+
+/*************Lists**************/
+

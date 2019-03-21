@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>My Form</title>
+<!--Google fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Poiret+One|Raleway" rel="stylesheet">
+    <!-- css -->
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+  <body>
+    <div class="container">
+      <h1 id="title">Avangers Form</h1>
+          <p id="description">Let us know which Avanger should defeat Thanos</p>
+
+        <div class="content">
+      <form id="survey-form" action="" mathod="GET">
+          <div class="name-text">
+          <label for="name" id="name-label">* Name: </label>
+        </div>
+        <div class="name-box">
+          <input type="text" id="name" name="name" placeholder="Enter your name" required>
+        </div>
+       
+        
+        <div class="email-text">
+          <label for="email" id="email-label">* Email: </label>
+        </div>
+        <div class="email-box">
+          <input type="email" id="email" name="email" placeholder="Enter your email" required>
+        </div>
+       
+        <div class="age-text">
+          <label for="age" id="number-label">* Age: </label>
+        </div>
+        <div class="age-box">
+          <input type="number" id="number" name="age" placeholder="Age" min="10" max="60">
+        </div>
+        
+
+          <div class="description1">
+            <p>Which option best describes your Super Hero name? </p>
+          </div>
+          <div class="description-option">
+            <select name="dropdown" id="dropdown">
+              <option selected disabled value="1">Select an option</option>
+              <option name="dropdown" value="2">Spectacular</option>
+              <option name="dropdown" value="3">Incredible</option>
+              <option name="dropdown" value="4">Invincible</option>
+              <option name="dropdown" value="5">Amazing</option>
+            </select>
+          </div>
+
+          <div class="description2">
+            <label>* Do you want to join The Avangers? </label>
+          </div>
+          <div class="description-radio">
+            <ul>
+              <li><input type="radio" id="radio1" name="radio" value="0"><label class="user-choice" for="radio1"> Definitely</label></li>
+              <li><input type="radio" id="radio2" name="radio" value="1"><label class="user-choice" for="radio2"> Maybe</label></li>
+              <li><input type="radio" id="radio3" name="radio" value="2"><label class="user-choice" for="radio3"> Not sure</label></li>
+            </ul>
+          </div>
+
+           <div class="description1">
+            <label>What do you like most in Avangers? </label>
+          </div>
+          <div class="description-option">
+            <select name="dropdown" id="dropdown">
+              <option selected disabled>Select an option</option>
+              <option value="0">Free Food</option>
+              <option value="1">Fights with Super Villains</option>
+              <option value="2">Black Widow</option>
+              <option value="3">Other</option>
+            </select>
+          </div>
+
+          <div class="description-checkbox">
+            <p>Which super powers do you posses?(Check all that apply): </p>
+          </div>
+
+          <div class="checkbox-field">
+            <ul>
+              <li><input type="checkbox" name="checkbox0" value="0" id="checkbox0"><label for="checkbox1">Invisibility</label></li>
+              <li><input type="checkbox" name="checkbox1" value="1" id="checkbox1"><label for="checkbox2">Flying</label></li>
+              <li><input type="checkbox" name="checkbox2" value="2" id="checkbox2"><label for="checkbox2">Flying</label></li>
+              <li><input type="checkbox" name="checkbox3" value="3" id="checkbox3"><label for="checkbox3">Flying</label></li>
+              <li><input type="checkbox" name="checkbox4" value="4" id="checkbox4"><label for="checkbox4">Flying</label></li>
+              <li><input type="checkbox" name="checkbox5" value=5 id="checkbox5"><label for="checkbox5">Flying</label></li>
+              <li><input type="checkbox" name="checkbox6" value=6 id="checkbox6"><label for="checkbox6">Flying</label></li>
+              <li><input type="checkbox" name="checkbox7" value=7 id="checkbox7"><label for="checkbox7">Flying</label></li>
+              <li><input type="checkbox" name="checkbox8" value=8 id="checkbox8"><label for="checkbox8">Flying</label></li>
+              <li><input type="checkbox" name="checkbox9" value=9 id="checkbox9"><label for="checkbox9">Flying</label></li>
+              <li><input type="checkbox" name="checkbox10" value="10" id="checkbox10"><label for="checkbox10">Flying</label></li>
+            </ul>
+          </div>
+
+          <div class="description-comment">
+            <label for="textarea">Any comments or Suggestions?</label>
+          </div>
+          <div class="comment-field">
+            <textarea name="textarea" id="textarea" cols="30" rows="10"></textarea>
+          </div>
+
+          <div class="btn">
+            <input class="button" type="submit" value="submit" id="submit">
+          </div>
+        </div>
+        
+      </form>
+    </div>
+    <script type="text/javascript" src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+  </body>
+</html>
