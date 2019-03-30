@@ -10,39 +10,52 @@
   </head>
   <body>
     <div class="container">
+      <img class="img" src="http://www.stickpng.com/assets/images/5842a4f5a6515b1e0ad75af6.png">
       <h1 id="title">Avangers Form</h1>
-          <p id="description">Let us know which Avanger should defeat Thanos</p>
+          <p id="description">Fill this up to join The Avangers</p>
 
-        <div class="content">
+
       <form id="survey-form" action="" mathod="GET">
-          <div class="name-text">
-          <label for="name" id="name-label">* Name: </label>
+          <div class="row-tab">
+          <div class="labels">
+            <label for="name" id="name-label">* Name: </label>
+          </div>
+
+           <div class="form-box">
+          <input type="text" id="name" class="input-field" name="name" placeholder="Enter your name" required>
         </div>
-        <div class="name-box">
-          <input type="text" id="name" name="name" placeholder="Enter your name" required>
         </div>
+       
        
         
-        <div class="email-text">
-          <label for="email" id="email-label">* Email: </label>
+        <div class="row-tab">
+          <div class="labels">
+            <label for="email" id="email-label">* Email: </label>
+          </div>
+           <div class="form-box">
+          <input type="email" id="email" class="input-field" name="email" placeholder="Enter your email" required>
         </div>
-        <div class="email-box">
-          <input type="email" id="email" name="email" placeholder="Enter your email" required>
         </div>
        
-        <div class="age-text">
-          <label for="age" id="number-label">* Age: </label>
+       
+        <div class="row-tab">
+          <div class="labels">
+            <label for="age" id="number-label">* Age: </label>
+          </div>
+          <div class="form-box">
+          <input type="number" id="number" class="input-field" name="age" placeholder="Age" min="10" max="60">
         </div>
-        <div class="age-box">
-          <input type="number" id="number" name="age" placeholder="Age" min="10" max="60">
         </div>
+        
         
 
-          <div class="description1">
-            <p>Which option best describes your Super Hero name? </p>
+          <div class="row-tab">
+            <div class="labels">
+            <label for="hero-name">Which option best describes your Super Hero name?</label>
           </div>
-          <div class="description-option">
-            <select name="dropdown" id="dropdown">
+          
+          <div class="form-box">
+            <select id="dropdown" name="hero-name" class="dropdown">
               <option selected disabled value="1">Select an option</option>
               <option name="dropdown" value="2">Spectacular</option>
               <option name="dropdown" value="3">Incredible</option>
@@ -50,23 +63,29 @@
               <option name="dropdown" value="5">Amazing</option>
             </select>
           </div>
+        </div>
 
-          <div class="description2">
+          <div class="row-tab">
+            <div class="labels">
             <label>* Do you want to join The Avangers? </label>
           </div>
-          <div class="description-radio">
+          
+          <div class="form-box">
             <ul>
-              <li><input type="radio" id="radio1" name="radio" value="0"><label class="user-choice" for="radio1"> Definitely</label></li>
-              <li><input type="radio" id="radio2" name="radio" value="1"><label class="user-choice" for="radio2"> Maybe</label></li>
-              <li><input type="radio" id="radio3" name="radio" value="2"><label class="user-choice" for="radio3"> Not sure</label></li>
+              <li class="radio"><label><input type="radio" name="radio" value="0" class="user-ratings"> Definitely</label></li>
+              <li class="radio"><label><input type="radio" name="radio" value="1" class="user-ratings"> Maybe</label></li>
+              <li class="radio"><label><input type="radio" name="radio" value="2" class="user-ratings"> Not sure</label></li>
             </ul>
           </div>
+        </div>
 
-           <div class="description1">
+          <div class="row-tab">
+             <div class="labels">
             <label>What do you like most in Avangers? </label>
           </div>
-          <div class="description-option">
-            <select name="dropdown" id="dropdown">
+          
+          <div class="form-box">
+            <select name="dropdown" class="dropdown">
               <option selected disabled>Select an option</option>
               <option value="0">Free Food</option>
               <option value="1">Fights with Super Villains</option>
@@ -74,41 +93,48 @@
               <option value="3">Other</option>
             </select>
           </div>
+        </div>
 
-          <div class="description-checkbox">
+          <div class="row-tab">
+            <div class="labels">
             <p>Which super powers do you posses?(Check all that apply): </p>
           </div>
+          
 
-          <div class="checkbox-field">
+          <div class="form-box">
             <ul>
-              <li><input type="checkbox" name="checkbox0" value="0" id="checkbox0"><label for="checkbox1">Invisibility</label></li>
-              <li><input type="checkbox" name="checkbox1" value="1" id="checkbox1"><label for="checkbox2">Flying</label></li>
-              <li><input type="checkbox" name="checkbox2" value="2" id="checkbox2"><label for="checkbox2">Flying</label></li>
-              <li><input type="checkbox" name="checkbox3" value="3" id="checkbox3"><label for="checkbox3">Flying</label></li>
-              <li><input type="checkbox" name="checkbox4" value="4" id="checkbox4"><label for="checkbox4">Flying</label></li>
-              <li><input type="checkbox" name="checkbox5" value=5 id="checkbox5"><label for="checkbox5">Flying</label></li>
-              <li><input type="checkbox" name="checkbox6" value=6 id="checkbox6"><label for="checkbox6">Flying</label></li>
-              <li><input type="checkbox" name="checkbox7" value=7 id="checkbox7"><label for="checkbox7">Flying</label></li>
-              <li><input type="checkbox" name="checkbox8" value=8 id="checkbox8"><label for="checkbox8">Flying</label></li>
-              <li><input type="checkbox" name="checkbox9" value=9 id="checkbox9"><label for="checkbox9">Flying</label></li>
-              <li><input type="checkbox" name="checkbox10" value="10" id="checkbox10"><label for="checkbox10">Flying</label></li>
+              <li class="checkbox"><label><input type="checkbox" class="user-ratings" name="checkbox0" value="0" id="checkbox0">Invisibility</label></li>
+              <li class="checkbox"><label><input type="checkbox" class="user-ratings" name="checkbox1" value="1" id="checkbox1">Flying</label></li>
+              <li class="checkbox"><label><input type="checkbox" class="user-ratings" name="checkbox2" value="2" id="checkbox2">Heat Vision</label></li>
+              <li class="checkbox"><label><input type="checkbox" class="user-ratings" name="checkbox3" value="3" id="checkbox3">Claws</label></li>
+              <li class="checkbox"><label><input type="checkbox" class="user-ratings" name="checkbox4" value="4" id="checkbox4">Super Strength</label></li>
+              <li class="checkbox"><label><input type="checkbox" class="user-ratings" name="checkbox5" value=5 id="checkbox5">Speed</label></li>
+              <li class="checkbox"><label><input type="checkbox" class="user-ratings" name="checkbox6" value=6 id="checkbox6">Telekinesis</label></li>
+              <li class="checkbox"><label><input type="checkbox" class="user-ratings" name="checkbox7" value=7 id="checkbox7">Bullet proof</label></li>
+              <li class="checkbox"><label><input type="checkbox" class="user-ratings" name="checkbox8" value=8 id="checkbox8">Rage</label></li>
+              <li class="checkbox"><label><input type="checkbox" class="user-ratings" name="checkbox9" value=9 id="checkbox9">Shape Shifting</label></li>
+              <li class="checkbox"><label><input type="checkbox" class="user-ratings" name="checkbox10" value="10" id="checkbox10">Super rich XD</label></li>
             </ul>
           </div>
+        </div>
 
-          <div class="description-comment">
+          <div class="row-tab">
+            <div class="labels">
             <label for="textarea">Any comments or Suggestions?</label>
           </div>
-          <div class="comment-field">
-            <textarea name="textarea" id="textarea" cols="30" rows="10"></textarea>
+          
+          <div class="form-box">
+            <textarea name="textarea" id="textarea" class="input-field" cols="30" rows="10"></textarea>
           </div>
 
           <div class="btn">
             <input class="button" type="submit" value="submit" id="submit">
           </div>
         </div>
+          </form>
+        </div>
         
-      </form>
-    </div>
+      
     <script type="text/javascript" src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
   </body>
 </html>
